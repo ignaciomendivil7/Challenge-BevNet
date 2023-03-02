@@ -1,0 +1,200 @@
+@use 'reset.scss';  @import'mixins.scss';
+
+.wrapper {
+    max-width: 90%;
+    margin: auto;
+}
+
+.main {
+    max-width: 750px;
+    margin: auto;
+    padding: 1em;
+}
+
+.header { 
+    background-color: white; 
+
+    .navbar {
+        padding: 1em;
+    
+        &__ul {
+            @include flex(row, nowrap, space-between, center);
+        }
+        &__li {
+            padding-left: 3em;
+        }
+        &__li--h1 {
+            font-weight: 600;
+        }
+        &__a {
+            color:rgb(229, 25, 55);
+        }
+    }
+}
+
+.company {
+    background-color: whitesmoke;
+    padding: 0.5em;
+}
+
+.hero {
+    background-color: chocolate;
+    height: 70vh;
+    @include flex(column, nowrap, center, center);
+
+    &__article {
+        background-color: black;
+        @include flex(column, nowrap, center, center);
+        gap: 1em;
+    }
+    &__img {
+        width: 520px;
+        height: 120px;
+        z-index: -1;
+    }
+    &__img--2 {
+        width: 520px;
+        height: 220px;
+    }
+    &__h1 {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    &__h2 {
+        font-size: 17px;
+        text-align: center;
+        color: gray;
+    }
+}
+
+.about {
+    background-color: white;
+    @include flex (column, nowrap, center, center);
+    height: 85vh;
+
+    &__article {
+        @include flex (column, nowrap, center, left);
+        gap: 2em;
+    }
+    &__p {
+        padding: 0.5em 0;
+    }
+    &__li {
+        text-align: left;
+    }
+    &__article--2 {
+        margin: 2.5em;
+    }
+    &__div--3 {
+        @include flex (column, nowrap, center, center);
+    }
+    &__button {
+        background-color: black;
+        color: aliceblue;
+        width: 200px;
+        padding: 0.5em;
+        border-radius: 0.5em;
+    }
+}
+
+.speakers {
+    background-color: whitesmoke;
+    @include flex (column, nowrap, center, center);
+    height: 90vh;
+
+
+    &__h1 {
+        text-align: center;
+        font-size: 20px;
+        margin: 2em;
+    }
+    &__article {
+        @include flex (row, nowrap, center, center);
+        gap: 3em;
+        padding: 1em;
+    }
+    &__article--2 {
+        @include flex (row, nowrap, center, center);
+        gap: 2em;
+        padding: 1em;
+    }
+    &__card {
+        @include flex (column, nowrap, center, center);
+    }
+    &__img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0.5em;
+    }
+    &__h2 {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+    }
+    &__h3 {
+        text-align: center;
+        padding: 0.5em 0;
+    }
+}
+
+.socialmedia {
+    background-color:darkslategray;
+
+    &__div--2 {
+        @include flex (row, nowrap, center, center);
+    }
+    &__a {
+        color: white;
+        font-size: 50px;
+        padding: 1em 0.5em;
+    }
+}
+
+.advertisement {
+    background-color: yellow;
+    @include flex (column, nowrap, center, center);
+
+    &__div--1 {
+        background-color: white;
+    }
+    &__p {
+        font-size: 14px;
+        color: grey;
+        text-align: center;
+        padding: 2em;
+    }
+}
+
+.info {
+
+    &__div--2 {
+        background-color: rgb(229, 25, 55);
+    }
+    &__p {
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 2em;
+    }
+}
+
+.footer {
+    background-color: white;
+    padding: 2em;
+
+    &__ul {
+        @include flex (row, nowrap, center, center);
+    }
+    &__a {
+        font-size: 11px;
+        padding-right: 0.5em;
+        color: grey;
+    }
+    &__p {
+        font-size: 11px;
+        text-align: center;
+        padding-top: 0.5em;
+        color: grey;
+    }
+}
